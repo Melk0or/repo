@@ -6,7 +6,7 @@ ENV PATH SMAVEN_HOME/bin:$PATH
 
 RUN apt-get update \
     && apt-get install -y maven \
-    && rm -rf /var/Lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/*
 
 COPY . /usr/src/app
 
